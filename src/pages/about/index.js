@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "../../components/header/HeaderOne";
 import SideHeader from "../../components/SideHeader";
 import ContentAboutPage from "../../templates/AboutPage";
-import FooterThree from "../../components/footer/FooterThree";
+import FooterOne from "../../components/footer/FooterOne";
 
 const AboutPage = () => {
     return (
@@ -10,7 +10,7 @@ const AboutPage = () => {
             <Header/>
             <SideHeader mobile={true}/>
             <ContentAboutPage/>
-            <FooterThree position={'fixed'}/>
+            <FooterOne position={'fixed'}/>
         </div>
     );
 };

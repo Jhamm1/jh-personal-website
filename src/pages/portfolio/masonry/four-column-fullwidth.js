@@ -2,7 +2,7 @@ import React, {Fragment, useState} from 'react';
 import Header from "../../../components/header/HeaderOne";
 import SideHeader from "../../../components/SideHeader";
 import PortfolioMasonryFourColumn from "../../../templates/portfolio/masonry/four-column";
-import FooterTwo from "../../../components/footer/FooterTwo";
+import FooterOne from "../../../components/footer/FooterOne";
 import portfolioData from '../../../data/portfolio/PortfolioMasonry';
 
 const PortfolioMasonryFourColumnFullWidthPage = () => {
@@ -25,7 +25,7 @@ const PortfolioMasonryFourColumnFullWidthPage = () => {
             <Header classes={'position-static'}/>
             <SideHeader mobile={true}/>
             <PortfolioMasonryFourColumn portfolios={portfolios} loading={loading} fullWidth={true}/>
-            <FooterTwo allItems={allItems} loadHandler={loadMore} />
+            <FooterOne allItems={allItems} loadHandler={loadMore} />
         </Fragment>
     );
 };

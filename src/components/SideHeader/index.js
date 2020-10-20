@@ -97,7 +97,8 @@ const SideHeader = ({mobile}) => {
                                 </div>
 
                                 <div className="side-header-copyright">
-                                    <p>&copy; {new Date().getFullYear()} MINIMAU. ALL RIGHT RESERVED</p>
+                                    {/* <p>&copy; {new Date().getFullYear()} MINIMAU. ALL RIGHT RESERVED</p> */}
+                                    <p>&copy; {new Date().getFullYear()} Julian Hamm</p>
                                 </div>
                             </div>
                         </div>

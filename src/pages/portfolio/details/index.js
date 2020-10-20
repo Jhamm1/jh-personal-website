@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import Header from "../../../components/header/HeaderOne";
 import SideHeader from "../../../components/SideHeader";
-import FooterThree from "../../../components/footer/FooterThree";
+import FooterOne from "../../../components/footer/FooterOne";
 import TemplatePortfolioDetails from "../../../templates/portfolio/details";
 
 const PortfolioDetailsPage = () => {
@@ -10,7 +10,7 @@ const PortfolioDetailsPage = () => {
             <Header classes={'position-static'}/>
             <SideHeader mobile={true}/>
             <TemplatePortfolioDetails/>
-            <FooterThree position='fixed'/>
+            <FooterOne position='fixed'/>
         </Fragment>
     );
 };

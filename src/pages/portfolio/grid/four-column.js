@@ -2,7 +2,7 @@ import React, {Fragment, useState} from 'react';
 import Header from "../../../components/header/HeaderOne";
 import SideHeader from "../../../components/SideHeader";
 import PortfolioGridFourColumn from "../../../templates/portfolio/grid/four-column";
-import FooterTwo from "../../../components/footer/FooterTwo";
+import FooterOne from "../../../components/footer/FooterOne";
 import portfolioData from '../../../data/portfolio'
 
 const PortfolioGridFourColumnPage = () => {
@@ -25,7 +25,7 @@ const PortfolioGridFourColumnPage = () => {
             <Header classes={'position-static'}/>
             <SideHeader mobile={true}/>
             <PortfolioGridFourColumn portfolios={portfolios} loading={loading} fullWidth={false}/>
-            <FooterTwo allItems={allItems} loadHandler={loadMore} />
+            <FooterOne allItems={allItems} loadHandler={loadMore} />
         </Fragment>
     );
 };

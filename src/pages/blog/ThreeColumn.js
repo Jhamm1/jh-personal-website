@@ -4,7 +4,7 @@ import React from 'react';
 import Header from "../../components/header/HeaderOne";
 import SideHeader from "../../components/SideHeader";
 import TemplateBlogWithoutSidebar from "../../templates/blog/BlogWithoutSidebar";
-import FooterThree from "../../components/footer/FooterThree";
+import FooterOne from "../../components/footer/FooterOne";
 
 const BlogThreeColumnPage = () => {
     return (
@@ -12,7 +12,7 @@ const BlogThreeColumnPage = () => {
             <Header/>
             <SideHeader mobile={true}/>
             <TemplateBlogWithoutSidebar blogColumnClass={'col-12 col-lg-4 col-md-6'} />
-            <FooterThree position={'fixed'} />
+            <FooterOne position={'fixed'} />
         </div>
     );
 };

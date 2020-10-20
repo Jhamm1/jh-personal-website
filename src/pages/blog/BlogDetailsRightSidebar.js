@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from "../../components/header/HeaderOne";
-import FooterThree from "../../components/footer/FooterThree";
+import FooterOne from "../../components/footer/FooterOne";
 import TemplateBlogDetailsWithSidebar from "../../templates/BlogDetails";
 import SideHeader from "../../components/SideHeader";
 
@@ -10,7 +10,7 @@ const BlogDetailsRightSidebarPage = () => {
             <Header classes={'position-static'}/>
             <SideHeader mobile={true}/>
             <TemplateBlogDetailsWithSidebar sidebarPosition="right"/>
-            <FooterThree position={'fixed'}/>
+            <FooterOne position={'fixed'}/>
         </div>
     );
 };

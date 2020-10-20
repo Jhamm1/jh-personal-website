@@ -5,13 +5,8 @@ import Switcher from "./components/Switcher";
 /*
 * @ Component Imported
 * */
-import HomeDefault from "./pages/home/HomeDefault";
-import HomeThreeColumn from "./pages/home/HomeThreeColumn";
-import HomeFourColumn from "./pages/home/HomeFourColumn";
-import HomeFiveColumn from './pages/home/HomeFiveColumn';
-import HomeBlog from "./pages/home/HomeBlog";
-import HomePersonalPortfolio from "./pages/home/HomePersonalPortfolio";
-import HomeFreelancerPortfolio from "./pages/home/HomeFreelancerPortfolio";
+
+import Home from "./pages/home/Home";
 import PortfolioGridTwoColumnPage from "./pages/portfolio/grid/two-column";
 import PortfolioGridThreeColumnPage from "./pages/portfolio/grid/three-column";
 import PortfolioGridFourColumnPage from "./pages/portfolio/grid/four-column";
@@ -35,7 +30,6 @@ import ServicePage from "./pages/service";
 import TeamPage from "./pages/team";
 import ContactPage from "./pages/contact";
 import ErrorPage from "./pages/404Error";
-import DemoPage from "./pages/demo";
 
 const App = () => {
     return (
@@ -87,9 +81,9 @@ const App = () => {
                            component={PortfolioGridTwoColumnPage}/>
                     <Route path={`${process.env.PUBLIC_URL + "/about"}`}
                            component={AboutPage}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/home-freelancer-portfolio"}`}
-                           component={HomeFreelancerPortfolio}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/home-personal-portfolio"}`}
+                    <Route path={`${process.env.PUBLIC_URL + "/"}`}
+                           component={Home}/>
+                    {/* <Route path={`${process.env.PUBLIC_URL + "/home-personal-portfolio"}`}
                            component={HomePersonalPortfolio}/>
                     <Route path={`${process.env.PUBLIC_URL + "/home-blog"}`}
                            component={HomeBlog}/>
@@ -103,7 +97,7 @@ const App = () => {
                            component={HomeDefault}/>
                     <Route exact path={`${process.env.PUBLIC_URL + "/"}`}
                            component={DemoPage}
-                    />
+                    /> */}
                     <Route exact component={ErrorPage}/>
                 </Switch>
             </Router>
